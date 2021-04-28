@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/ng-starter-kit",
             "index": "src/index.html",
@@ -29,7 +29,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "customWebpackConfig": {
+                "path": "./webpack.config.js",
+                "mergeRules": {
+                    "externals": "replace"
+                }
+            }
           },
           "configurations": {
             "production": {
