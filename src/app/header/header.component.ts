@@ -1,20 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import home from '@iconify/icons-ion/home';
 
 @Component({
-  selector: 'app-header',
-  template: `
-    <p>
-      header works!
-    </p>
-  `,
-  styles: [
-  ]
+	selector: 'app-header',
+	template: `<p>header works! <ic-icon [icon]="homeIcon"></ic-icon></p> `,
+	styles: []
 })
-export class HeaderComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class HeaderComponent {
+	homeIcon = home;
 }

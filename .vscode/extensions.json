@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "natewallace.angular2-inline",
+        "lokalise.i18n-ally",
+        "antfu.iconify",
+        "bradlc.vscode-tailwindcss",
+        "dbaeumer.vscode-eslint"
+    ]
+}
